@@ -2,50 +2,56 @@
 
 int main( int argc, char* argv[] )
 {
-	int readValue = 0;		
-	WEITER: printf("Enter a number between (including) 0 and 9 to display a number as text. Enter 10 to stop the program: ");
-	scanf("%d", &readValue);
+	
+	while(1) {
+		int readValue = 0;
+		printf( "Enter a number between (including)" 
+				" 0 and 9 to display the number as text.\n"
+			    "Enter 10 to stop the program.\n--> ");
+		scanf("%d", &readValue);
 
+		if(readValue == 10)
+		{
+			printf("Thank You. Goodbye.\n");
+			break;
+			}
 
 	switch(readValue){
 case 0:
 	printf("0 as text is 'zero'\n");
-	goto WEITER;
+	break;
 case 1:
 	printf("1 as text is 'one'\n");
-	goto WEITER;
+	break;
 case 2:
 	printf("2 as text is 'two'\n");
-	goto WEITER;
+	break;
 case 3:
 	printf("3 as text is 'three'\n");
-	goto WEITER;
+	break;
 case 4:
 	printf("4 as text is 'four'\n");
-	goto WEITER;
+	break;
 case 5:
 	printf("5 as text is 'five'\n");
-	goto WEITER;
+	break;
 case 6:
 	printf("6 as text is 'six'\n");
-	goto WEITER;
+	break;
 case 7:
 	printf("7 as text is 'seven'\n");
-	goto WEITER;
+	break;
 case 8:
 	printf("8 as text is 'eight'\n");
-	goto WEITER;
+	break;
 case 9:
 	printf("9 as text is 'nine'\n");
-	goto WEITER;
-case 10: 
-	printf("Thank you. Good bye.\n");
 	break;
 default:
 	printf("invalid -> try again.\n");
-	goto WEITER;
+	break;
 	
 }
-
+}
 	return 0;
 }
