@@ -32,14 +32,14 @@ int main( int argc, char* argv[] )
 			}
 		// b) Sum of the values
 		
-			printf("The sum of the values is %.2f\n", value1+value2);		
+			printf("The sum of the values is %.3f\n", value1+value2);		
 		
 
 		
 		
 		
 		// c) Absolute Diffrence
-			printf("The absolute diffrence is %.2f\n", value1-value2);
+			printf("The absolute diffrence is %.3f\n", value1-value2);
 		
 		
 		
